@@ -12,7 +12,7 @@ public class StepDefinitions {
         
 //         WebDriverManager.chromedriver().setup();
 //         WebDriverManager.firefoxdriver().setup();
-        System.setProperty("webdriver.gecko.driver", System.getenv("GECKOWEBDRIVER"));
+        System.setProperty("webdriver.gecko.driver", System.getenv("GECKOWEBDRIVER") + "\\geckodriver.exe");
         WebDriver driver = new FirefoxDriver();
         driver.get("https://www.google.com");
         
