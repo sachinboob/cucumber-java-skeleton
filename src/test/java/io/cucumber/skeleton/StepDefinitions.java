@@ -11,7 +11,8 @@ public class StepDefinitions {
     public void I_have_cukes_in_my_belly(int cukes) {
         
 //         WebDriverManager.chromedriver().setup();
-        WebDriverManager.firefoxdriver().setup();
+//         WebDriverManager.firefoxdriver().setup();
+        System.setProperty("webdriver.gecko.driver", System.getenv("GECKOWEBDRIVER"));
         WebDriver driver = new FirefoxDriver();
         driver.get("https://www.google.com");
         
