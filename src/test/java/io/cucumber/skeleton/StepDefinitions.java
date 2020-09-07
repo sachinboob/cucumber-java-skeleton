@@ -17,7 +17,7 @@ public class StepDefinitions {
         ChromeOptions options = new ChromeOptions();
 options.addArguments("--no-sandbox");
 options.addArguments("--disable-dev-shm-usage");
-options.addArguments("--headless");
+// options.addArguments("--headless");
         
         WebDriver driver = new ChromeDriver(options);
         driver.get("https://www.google.com");
