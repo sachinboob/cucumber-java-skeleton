@@ -14,12 +14,12 @@ public class StepDefinitions {
         WebDriverManager.chromedriver().setup();
 //         WebDriverManager.firefoxdriver().setup();
 //         System.setProperty("webdriver.gecko.driver", System.getenv("GECKOWEBDRIVER") + "\\geckodriver.exe");
-//         ChromeOptions options = new ChromeOptions();
-// options.addArguments("--no-sandbox");
-// options.addArguments("--disable-dev-shm-usage");
-// options.addArguments("--headless");
+        ChromeOptions options = new ChromeOptions();
+options.addArguments("--no-sandbox");
+options.addArguments("--disable-dev-shm-usage");
+options.addArguments("--headless");
         
-        WebDriver driver = new ChromeDriver();
+        WebDriver driver = new ChromeDriver(options);
         driver.get("https://www.google.com");
         
         Belly belly = new Belly();
